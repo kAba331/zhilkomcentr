@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="МБУ «Жилкомцентр» г. Кемерово - управление жилищным фондом и контроль качества жилищно-коммунальных услуг">
+    <title>МБУ «Жилкомцентр» - г. Кемерово</title>
+    <style>
+        /* Базовые стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Шапка сайта */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #3498db;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        
+        /* Основной контент */
+        main {
+            padding: 40px 0;
+        }
+        
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 8px;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .section ul {
+            list-style-position: inside;
+            margin-left: 20px;
+        }
+        
+        .section li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .contact-item h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .contact-item p {
+            margin-bottom: 5px;
+        }
+        
+        /* Подвал */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .address {
+            margin: 15px 0;
+            font-style: normal;
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bdc3c7;
+        }
+        
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">МБУ <span>«Жилкомцентр»</span></div>
+                <nav>
+                    <ul>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#activities">Деятельность</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <!-- Приветственный блок -->
+        <section class="hero">
+            <h1>МБУ «Жилкомцентр» г. Кемерово</h1>
+            <p>Управление жилищным фондом и контроль качества жилищно-коммунальных услуг</p>
+        </section>
+
+        <!-- О нас -->
+        <section id="about" class="section">
+            <h2>О нас</h2>
+            <p>Муниципальное бюджетное учреждение «Жилкомцентр» (г. Кемерово, улица Заузелкова, 5) создано для выполнения работ, оказания услуг, в целях осуществления полномочий органа местного самоуправления города Кемерово, связанных с управлением жилищным фондом.</p>
+        </section>
+
+        <!-- Основные виды деятельности -->
+        <section id="activities" class="section">
+            <h2>Основные виды деятельности</h2>
+            <ul>
+                <li>Осуществление контроля за санитарно-техническим состоянием общего имущества многоквартирных домов города Кемерово, в которых имеются муниципальные помещения;</li>
+                <li>Контроль качества предоставления гражданам жилищно-коммунальных услуг в многоквартирных домах города Кемерово. Принятие решений в рамках своих полномочий;</li>
+                <li>Организация и работа диспетчерской службы «Горячая линия» (по устным обращениям граждан). Принятие решений в рамках своих полномочий;</li>
+                <li>Осуществление контроля за ходом выполнения работ по капитальному ремонту с предоставлением бюджетных средств, а также средств, собранных с населения;</li>
+                <li>Участие в расчете размера платы за содержание и ремонт общего имущества в многоквартирных домах;</li>
+                <li>Подготовка информации на открытый конкурс по отбору управляющей организации: - в многоквартирных домах, собственники которых не приняли (или не реализовали) решение о выборе способа управления; - в «новостройках»;</li>
+                <li>Осуществление проверок документов, связанных с предоставлением субсидий управляющим компаниям, ТСЖ на капитальный ремонт общего имущества многоквартирного дома;</li>
+                <li>Осуществление проверок в рамках финансово-хозяйственной деятельности муниципальных организаций и организаций, которым предоставляются целевые бюджетные средства (субсидии);</li>
+                <li>Организация повышения уровня квалификации лиц, осуществляющих управление многоквартирными домами;</li>
+                <li>Взаимодействие со всеми действующими СМИ (с телеканалами, радиоканалами и печатными изданиями города Кемерово).</li>
+            </ul>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="section">
+            <h2>Контакты и прием граждан</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Прием граждан</h3>
+                    <p><strong>Еженедельно, по понедельникам:</strong></p>
+                    <p>с 15.00 до 17.00 - юридическая консультация</p>
+                    <p>Телефон: <strong>31-23-43</strong></p>
+                    <p>с 16.00 до 18.00 - прием граждан руководителем учреждения</p>
+                    <p>Телефон: <strong>31-23-23</strong></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Горячая линия</h3>
+                    <p>Диспетчеры «горячей линии» принимают обращения от жителей, связанные с санитарно-техническим состоянием как жилого помещения собственников, так и общего имущества многоквартирного дома.</p>
+                    <p>Телефон: <strong>31-23-32</strong></p>
+                    <p>Время работы: <strong>с 08:00 до 17:00</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">МБУ <span>«Жилкомцентр»</span></div>
+                <div class="address">г. Кемерово, ул. Заузелкова, 5</div>
+                <div class="copyright">© 2023 МБУ «Жилкомцентр». Все права защищены.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
